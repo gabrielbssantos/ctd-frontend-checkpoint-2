@@ -14,7 +14,7 @@
 
     <!-- HEADER -->
     <header class="page-header">
-        <h1 class="title">Cidade de São Paulo</h1>
+        <h1>Cidade de São Paulo</h1>
         <nav class="page-nav">
             <ul>
                 <li><a href="index.html">Ínicio</a></li>
@@ -23,44 +23,45 @@
         </nav>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main class="main default-border-radius">
         <div class="content">
-            <h2 class="title">Contato</h2>
+            <h2>Contato</h2>
             <form class="contact-form" action="#">
                 <fieldset class="default-border-radius">
                     <legend>Informações Pessoais</legend>
 
-                    <div>
-                        <label>Nome</label>
-                        <input type="text" name="name" id="name" maxlength="100">
+                    <div class="form-col">
+                        <label for="name">Nome</label>
+                        <input class="form-input" type="text" name="name" id="name" maxlength="100">
                     </div>
 
-                    <div>
-                        <label>E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="nome@dominio.com">
+                    <div class="form-col">
+                        <label for="email">E-mail</label>
+                        <input class="form-input" type="email" name="email" id="email" placeholder="nome@dominio.com">
                     </div>
                     
-                    <div>
-                        <label>Telefone</label>
-                        <input type="number" name="phone" id="phone" placeholder=" 99999999">
+                    <div class="form-col">
+                        <label for="phone">Telefone</label>
+                        <input class="form-input" type="number" name="phone" id="phone" placeholder=" 99999999">
                     </div>
 
                     <div>
-                        <label>Data de Nascimento</label>
-                        <input type="date" name="date" id="date">
+                        <label for="date">Data de Nascimento</label>
+                        <input class="form-input" type="date" name="date" id="date">
                     </div>
 
-                    <div>
-                        <label>Maior de Idade</label>
+                    <div class="form-row">
+                        <label for="maiordeidade">Maior de Idade</label>
                         <input type="radio" name="maiordeidade" id="maiordeidade" value="sim">
                         <label for="maiordeidade">Sim</label>
                         <input type="radio" name="maiordeidade" id="maiordeidade" value="nao">
                         <label for="maiordeidade">Não</label>
                     </div>
 
-                    <div>
-                        <label>Ponto de Interesse</label>
-                        <select name="pontointeresse" id="pontointeresse">
+                    <div class="form-col">
+                        <label for="pontointeresse">Ponto de Interesse</label>
+                        <select class="form-input" name="pontointeresse" id="pontointeresse">
                             <option value="">Selecione um ponto de seu interesse</option>
                             <option value="1">Museu de Arte de São Paulo (MASP)</option>
                             <option value="2">Parque Ibirapuera</option>
@@ -80,8 +81,8 @@
                         </select>
                     </div>
 
-                    <div>
-                        <p>Interesse na Cidade:</p>
+                    <div class="form-row">
+                        <span>Interesse na Cidade:</span>
                         <input type="checkbox" name="turista" id="turista" value="Turista"> <label
                         for="turista">Turista</label>
                         <input type="checkbox" name="residente" id="residente" value="Residente "> <label
@@ -90,9 +91,9 @@
                         for="estudante">Estudante</label>
                     </div>
 
-                    <div>
-                        <input class="form-btn" type="submit" value="Enviar">
-                        <input class="form-btn" type="reset" value="Limpar Formulário">
+                    <div class="form-row">
+                        <input class="form-btn default-border-radius" type="submit" value="Enviar">
+                        <input class="form-btn form-btn-reset default-border-radius" type="reset" value="Limpar Formulário">
                     </div>
 
                 </fieldset>
@@ -102,6 +103,7 @@
         
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <ul class="social-links">
             <li class="icon">
